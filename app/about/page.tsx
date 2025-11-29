@@ -28,7 +28,7 @@ const team = [
 ]
 
 const milestones = [
-  { year: "2019", event: "Founded in Bangalore with a focus on web development" },
+  { year: "2019", event: "Founded in Hyderabad with a focus on web development" },
   { year: "2020", event: "Expanded to Wikipedia authority building services" },
   { year: "2021", event: "Launched comprehensive SEO and digital marketing division" },
   { year: "2023", event: "Pioneered AI automation and RAG solutions for enterprises" },
