@@ -18,7 +18,7 @@ export function StickyCta() {
 
   return (
     <div
-      className={`fixed bottom-0 left-0 right-0 z-50 bg-[#0052CC] border-t-2 border-[#002A66] transition-transform duration-300 ${
+      className={`fixed bottom-0 left-0 right-0 z-50 bg-[#0052CC] border-t-2 border-[#000000] transition-transform duration-300 ${
         isVisible ? "translate-y-0" : "translate-y-full"
       }`}
     >

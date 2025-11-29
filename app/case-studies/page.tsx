@@ -99,7 +99,7 @@ export default function CaseStudiesPage() {
       </section>
 
       {/* Stats Overview */}
-      <section className="py-12 bg-[#002A66] text-[#FFFFFF]">
+      <section className="py-12 bg-[#000000] text-[#FFFFFF]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
@@ -137,27 +137,27 @@ export default function CaseStudiesPage() {
                     <span className="text-[#0052CC] text-sm font-medium uppercase tracking-wider">
                       {study.industry}
                     </span>
-                    <h3 className="text-2xl font-bold text-[#002A66] mt-2 mb-4">{study.client}</h3>
+                    <h3 className="text-2xl font-bold text-[#000000] mt-2 mb-4">{study.client}</h3>
                     <div className="inline-block bg-[#0052CC] text-[#FFFFFF] px-3 py-1 text-sm font-medium">
                       {study.service}
                     </div>
-                    <p className="text-[#002A66]/60 text-sm mt-4">Timeline: {study.timeline}</p>
+                    <p className="text-[#000000]/60 text-sm mt-4">Timeline: {study.timeline}</p>
                   </div>
 
                   {/* Challenge & Solution */}
                   <div className="p-8 border-b lg:border-b-0 lg:border-r border-[#E2E8F0]">
                     <div className="mb-6">
-                      <h4 className="font-bold text-[#002A66] mb-2">Challenge</h4>
-                      <p className="text-[#002A66]/70 text-sm">{study.challenge}</p>
+                      <h4 className="font-bold text-[#000000] mb-2">Challenge</h4>
+                      <p className="text-[#000000]/70 text-sm">{study.challenge}</p>
                     </div>
                     <div>
-                      <h4 className="font-bold text-[#002A66] mb-2">Solution</h4>
-                      <p className="text-[#002A66]/70 text-sm">{study.solution}</p>
+                      <h4 className="font-bold text-[#000000] mb-2">Solution</h4>
+                      <p className="text-[#000000]/70 text-sm">{study.solution}</p>
                     </div>
                   </div>
 
                   {/* Results */}
-                  <div className="p-8 bg-[#002A66] text-[#FFFFFF]">
+                  <div className="p-8 bg-[#000000] text-[#FFFFFF]">
                     <h4 className="font-bold mb-6">Results</h4>
                     <div className="space-y-4">
                       {study.results.map((result) => (

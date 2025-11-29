@@ -91,14 +91,14 @@ export default function SEOMarketingPage() {
       {/* Service Breakdown */}
       <section className="py-16 bg-[#FFFFFF]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-[#002A66] mb-8">Our Services</h2>
+          <h2 className="text-2xl font-bold text-[#000000] mb-8">Our Services</h2>
           <div className="grid md:grid-cols-3 gap-6">
             {services.map((service) => (
               <div key={service.title} className="border border-[#D1D5DB] p-6">
                 <h3 className="text-lg font-bold text-[#0052CC] mb-4">{service.title}</h3>
                 <ul className="space-y-3">
                   {service.items.map((item) => (
-                    <li key={item} className="flex items-center gap-2 text-sm text-[#002A66]">
+                    <li key={item} className="flex items-center gap-2 text-sm text-[#000000]">
                       <CheckIcon className="w-4 h-4 text-[#0052CC]" />
                       {item}
                     </li>
@@ -113,7 +113,7 @@ export default function SEOMarketingPage() {
       {/* SEO Pricing Plans */}
       <section id="pricing" className="py-16 bg-[#F5F7FA]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-[#002A66] mb-8 text-center">SEO Retainer Plans</h2>
+          <h2 className="text-2xl font-bold text-[#000000] mb-8 text-center">SEO Retainer Plans</h2>
           <div className="grid md:grid-cols-3 gap-6">
             {pricingPlans.map((plan) => (
               <div
@@ -125,7 +125,7 @@ export default function SEOMarketingPage() {
                     RECOMMENDED
                   </div>
                 )}
-                <h3 className="text-lg font-bold text-[#002A66]">{plan.name}</h3>
+                <h3 className="text-lg font-bold text-[#000000]">{plan.name}</h3>
                 <div className="mt-4">
                   <span className="text-3xl font-bold text-[#0052CC]">{plan.price}</span>
                   <span className="text-[#4A5568]">{plan.period}</span>
@@ -142,7 +142,7 @@ export default function SEOMarketingPage() {
                   href="/#contact"
                   className={`mt-6 px-4 py-3 text-sm font-semibold text-center transition-colors duration-150 ${
                     plan.popular
-                      ? "bg-[#0052CC] text-[#FFFFFF] hover:bg-[#002A66]"
+                      ? "bg-[#0052CC] text-[#FFFFFF] hover:bg-[#000000]"
                       : "border border-[#0052CC] text-[#0052CC] hover:bg-[#0052CC] hover:text-[#FFFFFF]"
                   }`}
                 >
@@ -157,7 +157,7 @@ export default function SEOMarketingPage() {
       {/* Additional Services */}
       <section className="py-16 bg-[#FFFFFF]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-[#002A66] mb-8">Additional Services</h2>
+          <h2 className="text-2xl font-bold text-[#000000] mb-8">Additional Services</h2>
           <div className="max-w-2xl border border-[#D1D5DB]">
             {retainerPricing.map((item, index) => (
               <div
@@ -166,7 +166,7 @@ export default function SEOMarketingPage() {
                   index < retainerPricing.length - 1 ? "border-b border-[#D1D5DB]" : ""
                 }`}
               >
-                <span className="text-sm text-[#002A66]">{item.service}</span>
+                <span className="text-sm text-[#000000]">{item.service}</span>
                 <span className="text-sm font-bold text-[#0052CC]">{item.price}</span>
               </div>
             ))}
@@ -177,7 +177,7 @@ export default function SEOMarketingPage() {
       {/* Results */}
       <section className="py-16 bg-[#F5F7FA]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-[#002A66] mb-8">Expected Results</h2>
+          <h2 className="text-2xl font-bold text-[#000000] mb-8">Expected Results</h2>
           <div className="grid sm:grid-cols-3 gap-6">
             <div className="text-center p-6 bg-[#FFFFFF] border border-[#D1D5DB]">
               <div className="text-4xl font-bold text-[#0052CC]">2-3x</div>
@@ -196,7 +196,7 @@ export default function SEOMarketingPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-[#002A66]">
+      <section className="py-16 bg-[#000000]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl sm:text-3xl font-bold text-[#FFFFFF] mb-4">Ready to Grow Your Online Presence?</h2>
           <p className="text-[#FFFFFF]/80 mb-8 max-w-xl mx-auto">

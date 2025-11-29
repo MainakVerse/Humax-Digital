@@ -4,7 +4,7 @@ const openings = [
   {
     title: "Senior Full-Stack Developer",
     department: "Engineering",
-    location: "Bangalore / Remote",
+    location: "Hyderabad / Remote",
     type: "Full-time",
     description:
       "Build scalable web applications and SaaS products for enterprise clients using Next.js, React, and Node.js.",
@@ -12,7 +12,7 @@ const openings = [
   {
     title: "AI/ML Engineer",
     department: "AI Solutions",
-    location: "Bangalore / Remote",
+    location: "Hyderabad / Remote",
     type: "Full-time",
     description: "Develop RAG systems, AI agents, and automation solutions using LLMs and modern AI frameworks.",
   },
@@ -33,7 +33,7 @@ const openings = [
   {
     title: "Project Manager",
     department: "Operations",
-    location: "Bangalore",
+    location: "Hyderabad",
     type: "Full-time",
     description: "Lead cross-functional teams to deliver complex digital projects on time and within scope.",
   },
@@ -66,15 +66,15 @@ export default function CareersPage() {
       {/* Why Join Us */}
       <section className="py-20 bg-[#FFFFFF]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-[#002A66] mb-12 text-center">Why Join Humax Digital?</h2>
+          <h2 className="text-3xl font-bold text-[#000000] mb-12 text-center">Why Join Humax Digital?</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {benefits.map((benefit) => (
               <div
                 key={benefit.title}
                 className="p-8 border border-[#E2E8F0] hover:border-[#0052CC] transition-colors duration-150"
               >
-                <h3 className="text-lg font-bold text-[#002A66] mb-2">{benefit.title}</h3>
-                <p className="text-[#002A66]/70">{benefit.description}</p>
+                <h3 className="text-lg font-bold text-[#000000] mb-2">{benefit.title}</h3>
+                <p className="text-[#000000]/70">{benefit.description}</p>
               </div>
             ))}
           </div>
@@ -84,7 +84,7 @@ export default function CareersPage() {
       {/* Open Positions */}
       <section className="py-20 bg-[#F8FAFC]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-[#002A66] mb-12 text-center">Open Positions</h2>
+          <h2 className="text-3xl font-bold text-[#000000] mb-12 text-center">Open Positions</h2>
           <div className="space-y-4">
             {openings.map((job) => (
               <div
@@ -94,11 +94,11 @@ export default function CareersPage() {
                 <div className="p-6 flex flex-col lg:flex-row lg:items-center justify-between gap-4">
                   <div className="flex-1">
                     <div className="flex flex-wrap items-center gap-3 mb-2">
-                      <h3 className="text-xl font-bold text-[#002A66]">{job.title}</h3>
+                      <h3 className="text-xl font-bold text-[#000000]">{job.title}</h3>
                       <span className="bg-[#0052CC] text-[#FFFFFF] px-2 py-0.5 text-xs font-medium">{job.type}</span>
                     </div>
-                    <p className="text-[#002A66]/70 text-sm mb-2">{job.description}</p>
-                    <div className="flex flex-wrap gap-4 text-sm text-[#002A66]/60">
+                    <p className="text-[#000000]/70 text-sm mb-2">{job.description}</p>
+                    <div className="flex flex-wrap gap-4 text-sm text-[#000000]/60">
                       <span>{job.department}</span>
                       <span>•</span>
                       <span>{job.location}</span>
@@ -106,7 +106,7 @@ export default function CareersPage() {
                   </div>
                   <a
                     href={`mailto:careers@humaxdigital.com?subject=Application: ${job.title}`}
-                    className="inline-block bg-[#002A66] text-[#FFFFFF] px-6 py-3 font-semibold hover:bg-[#0052CC] transition-colors duration-150 text-center"
+                    className="inline-block bg-[#000000] text-[#FFFFFF] px-6 py-3 font-semibold hover:bg-[#0052CC] transition-colors duration-150 text-center"
                   >
                     Apply Now
                   </a>
@@ -118,7 +118,7 @@ export default function CareersPage() {
       </section>
 
       {/* General Application */}
-      <section className="py-20 bg-[#002A66] text-[#FFFFFF]">
+      <section className="py-20 bg-[#000000] text-[#FFFFFF]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-6">Don't See Your Role?</h2>
           <p className="text-[#FFFFFF]/70 text-lg mb-8 max-w-2xl mx-auto">

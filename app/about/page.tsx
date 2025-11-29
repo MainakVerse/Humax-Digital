@@ -21,8 +21,8 @@ const values = [
 ]
 
 const team = [
-  { name: "Rajesh Kumar", role: "Founder & CEO", expertise: "Digital Strategy" },
-  { name: "Priya Sharma", role: "Head of Engineering", expertise: "Full-Stack Development" },
+  { name: "Utkarsh Chaturvedi", role: "Founder & CEO", expertise: "Digital Strategy" },
+  { name: "Mainaky", role: "Head of Engineering", expertise: "Full-Stack Development" },
   { name: "Amit Patel", role: "AI Solutions Lead", expertise: "Machine Learning & RAG" },
   { name: "Neha Gupta", role: "Marketing Director", expertise: "SEO & Growth" },
 ]

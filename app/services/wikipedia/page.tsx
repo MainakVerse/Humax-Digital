@@ -86,7 +86,7 @@ export default function WikipediaPage() {
       {/* Notability Tiers */}
       <section className="py-16 bg-[#FFFFFF]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-[#002A66] mb-8">Notability Assessment</h2>
+          <h2 className="text-2xl font-bold text-[#000000] mb-8">Notability Assessment</h2>
           <p className="text-[#4A5568] mb-8 max-w-2xl">
             Wikipedia has strict notability guidelines. We evaluate your eligibility before any work begins to ensure
             successful page creation.
@@ -98,7 +98,7 @@ export default function WikipediaPage() {
                 <p className="text-sm text-[#4A5568] mb-4">{tier.description}</p>
                 <ul className="space-y-2">
                   {tier.requirements.map((req) => (
-                    <li key={req} className="flex items-center gap-2 text-sm text-[#002A66]">
+                    <li key={req} className="flex items-center gap-2 text-sm text-[#000000]">
                       <CheckIcon className="w-4 h-4 text-[#0052CC]" />
                       {req}
                     </li>
@@ -113,9 +113,9 @@ export default function WikipediaPage() {
       {/* Pricing Table */}
       <section id="pricing" className="py-16 bg-[#F5F7FA]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-[#002A66] mb-8 text-center">Service Pricing</h2>
+          <h2 className="text-2xl font-bold text-[#000000] mb-8 text-center">Service Pricing</h2>
           <div className="max-w-3xl mx-auto border border-[#D1D5DB]">
-            <div className="grid grid-cols-3 bg-[#002A66] text-[#FFFFFF]">
+            <div className="grid grid-cols-3 bg-[#000000] text-[#FFFFFF]">
               <div className="p-4 font-semibold text-sm">Service</div>
               <div className="p-4 font-semibold text-sm text-center border-l border-[#FFFFFF]/20">Price</div>
               <div className="p-4 font-semibold text-sm border-l border-[#FFFFFF]/20">Description</div>
@@ -125,7 +125,7 @@ export default function WikipediaPage() {
                 key={item.service}
                 className={`grid grid-cols-3 ${index % 2 === 0 ? "bg-[#FFFFFF]" : "bg-[#F5F7FA]"} border-t border-[#D1D5DB]`}
               >
-                <div className="p-4 text-[#002A66] font-medium text-sm">{item.service}</div>
+                <div className="p-4 text-[#000000] font-medium text-sm">{item.service}</div>
                 <div className="p-4 text-[#0052CC] font-bold text-sm text-center border-l border-[#D1D5DB]">
                   {item.price}
                 </div>
@@ -139,12 +139,12 @@ export default function WikipediaPage() {
       {/* Process */}
       <section className="py-16 bg-[#FFFFFF]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-[#002A66] mb-8">Our Process</h2>
+          <h2 className="text-2xl font-bold text-[#000000] mb-8">Our Process</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
             {process.map((item) => (
               <div key={item.step} className="relative">
                 <div className="text-4xl font-bold text-[#0052CC]/20 mb-2">{item.step}</div>
-                <h3 className="text-base font-bold text-[#002A66] mb-1">{item.title}</h3>
+                <h3 className="text-base font-bold text-[#000000] mb-1">{item.title}</h3>
                 <p className="text-sm text-[#4A5568]">{item.description}</p>
               </div>
             ))}
@@ -156,7 +156,7 @@ export default function WikipediaPage() {
       <section className="py-12 bg-[#F5F7FA]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="border-l-4 border-[#0052CC] pl-6">
-            <h3 className="text-lg font-bold text-[#002A66] mb-2">Ethical Compliance</h3>
+            <h3 className="text-lg font-bold text-[#000000] mb-2">Ethical Compliance</h3>
             <p className="text-sm text-[#4A5568]">
               We follow all Wikipedia guidelines and policies. We do not create pages for non-notable subjects, engage
               in paid editing without disclosure, or use deceptive practices. Our approach is transparent and built for
@@ -167,7 +167,7 @@ export default function WikipediaPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-[#002A66]">
+      <section className="py-16 bg-[#000000]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl sm:text-3xl font-bold text-[#FFFFFF] mb-4">Check Your Wikipedia Eligibility</h2>
           <p className="text-[#FFFFFF]/80 mb-8 max-w-xl mx-auto">

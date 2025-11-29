@@ -2,6 +2,7 @@ import type React from "react"
 import type { Metadata, Viewport } from "next"
 import { Lora } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import { BackToTop } from "@/components/back-to-top"
 import "./globals.css"
 
 const lora = Lora({
@@ -12,25 +13,14 @@ const lora = Lora({
 
 export const metadata: Metadata = {
   title:
-    "Humax Digital | AI Company in India | Best Web Development, Digital Marketing & SEO Agency",
+    "Humax Digital | Best Digital Solutions - AI, Web Dev, SEO & Marketing",
   description:
     "Humax Digital is a leading AI company in India specializing in AI automation, custom web development, RAG systems, SEO, Wikipedia page creation, digital marketing, and data-driven growth solutions for businesses worldwide.",
-  keywords: [
-    "AI Solutions",
-    "AI Automation Agency",
-    "Custom AI Development",
-    "RAG Systems",
-    "Web Development Company",
-    "Next.js Development",
-    "Digital Marketing Agency",
-    "SEO Services",
-    "Wikipedia Page Creation Service",
-    "AI Chatbots",
-    "Marketing Automation",
-    "Enterprise AI",
-  ],
   metadataBase: new URL("https://www.humaxdigital.com"),
   alternates: { canonical: "https://www.humaxdigital.com" },
+  icons: {
+    icon: "/favicon.ico",
+  },
 }
 
 export const viewport: Viewport = {
@@ -44,6 +34,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${lora.variable} font-serif antialiased`}>
         {children}
+        <BackToTop />
         <Analytics />
       </body>
     </html>

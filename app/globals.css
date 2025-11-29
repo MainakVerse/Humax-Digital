@@ -6,15 +6,15 @@
 /* Humax Digital Corporate Theme - Blue/White with Sharp Edges */
 :root {
   --background: #ffffff;
-  --foreground: #002a66;
+  --foreground: #000000;
   --card: #ffffff;
-  --card-foreground: #002a66;
+  --card-foreground: #000000;
   --popover: #ffffff;
-  --popover-foreground: #002a66;
+  --popover-foreground: #000000;
   --primary: #0052cc;
   --primary-foreground: #ffffff;
   --secondary: #f0f4f8;
-  --secondary-foreground: #002a66;
+  --secondary-foreground: #000000;
   --muted: #f5f7fa;
   --muted-foreground: #4a5568;
   --accent: #0a66e8;
@@ -41,7 +41,7 @@
 
   /* Custom Humax colors for direct usage */
   --humax-blue: #0052cc;
-  --humax-dark: #002a66;
+  --humax-dark: #000000;
   --humax-light: #0a66e8;
   --humax-white: #ffffff;
   --humax-gray: #f5f7fa;

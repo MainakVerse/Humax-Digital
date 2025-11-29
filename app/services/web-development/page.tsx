@@ -96,7 +96,7 @@ export default function WebDevelopmentPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12">
             <div>
-              <h2 className="text-2xl font-bold text-[#002A66] mb-6">What We Build</h2>
+              <h2 className="text-2xl font-bold text-[#000000] mb-6">What We Build</h2>
               <p className="text-[#4A5568] leading-relaxed mb-6">
                 From corporate websites to complex SaaS platforms, we deliver production-ready solutions using modern
                 technologies. Our development process emphasizes clean code, scalable architecture, and seamless user
@@ -108,13 +108,13 @@ export default function WebDevelopmentPage() {
                     <div className="w-5 h-5 bg-[#0052CC] flex items-center justify-center flex-shrink-0">
                       <CheckIcon className="w-3 h-3 text-[#FFFFFF]" />
                     </div>
-                    <span className="text-sm text-[#002A66]">{feature}</span>
+                    <span className="text-sm text-[#000000]">{feature}</span>
                   </div>
                 ))}
               </div>
             </div>
             <div className="bg-[#F5F7FA] p-8">
-              <h3 className="text-lg font-bold text-[#002A66] mb-4">Tech Stack</h3>
+              <h3 className="text-lg font-bold text-[#000000] mb-4">Tech Stack</h3>
               <div className="space-y-4">
                 <div>
                   <div className="text-sm font-semibold text-[#0052CC] mb-1">Frontend</div>
@@ -141,12 +141,12 @@ export default function WebDevelopmentPage() {
       {/* Pricing Table */}
       <section id="pricing" className="py-16 bg-[#F5F7FA]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-[#002A66] mb-8 text-center">Pricing Plans</h2>
+          <h2 className="text-2xl font-bold text-[#000000] mb-8 text-center">Pricing Plans</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {pricingTiers.map((tier) => (
               <div key={tier.name} className="bg-[#FFFFFF] border border-[#D1D5DB] p-6 flex flex-col">
                 <div className="text-xs text-[#4A5568] uppercase tracking-wider">{tier.pages}</div>
-                <h3 className="text-lg font-bold text-[#002A66] mt-2">{tier.name}</h3>
+                <h3 className="text-lg font-bold text-[#000000] mt-2">{tier.name}</h3>
                 <div className="text-2xl font-bold text-[#0052CC] mt-4">{tier.price}</div>
                 <ul className="mt-6 space-y-3 flex-grow">
                   {tier.features.map((feature) => (
@@ -158,7 +158,7 @@ export default function WebDevelopmentPage() {
                 </ul>
                 <Link
                   href="/#contact"
-                  className="mt-6 px-4 py-3 bg-[#0052CC] text-[#FFFFFF] text-sm font-semibold text-center hover:bg-[#002A66] transition-colors duration-150"
+                  className="mt-6 px-4 py-3 bg-[#0052CC] text-[#FFFFFF] text-sm font-semibold text-center hover:bg-[#000000] transition-colors duration-150"
                 >
                   Get Quote
                 </Link>
@@ -171,13 +171,13 @@ export default function WebDevelopmentPage() {
       {/* Deliverables */}
       <section className="py-16 bg-[#FFFFFF]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-[#002A66] mb-8">What You Receive</h2>
+          <h2 className="text-2xl font-bold text-[#000000] mb-8">What You Receive</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
             {deliverables.map((item) => (
               <div key={item} className="p-4 bg-[#F5F7FA] border border-[#D1D5DB]">
                 <div className="flex items-center gap-2">
                   <CheckIcon className="w-5 h-5 text-[#0052CC]" />
-                  <span className="text-sm font-medium text-[#002A66]">{item}</span>
+                  <span className="text-sm font-medium text-[#000000]">{item}</span>
                 </div>
               </div>
             ))}
@@ -186,7 +186,7 @@ export default function WebDevelopmentPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-[#002A66]">
+      <section className="py-16 bg-[#000000]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl sm:text-3xl font-bold text-[#FFFFFF] mb-4">Ready to Build Your Web Presence?</h2>
           <p className="text-[#FFFFFF]/80 mb-8 max-w-xl mx-auto">

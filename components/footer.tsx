@@ -9,7 +9,7 @@ const footerLinks = {
   ],
   company: [
     { label: "About Us", href: "/about" },
-    { label: "Case Studies", href: "/case-studies" },
+    { label: "Case Studies", href: "/#case-studies" },
     { label: "Careers", href: "/careers" },
     { label: "Blog", href: "/blog" },
   ],

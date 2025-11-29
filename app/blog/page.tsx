@@ -77,7 +77,7 @@ export default function BlogPage() {
                 className={`px-4 py-2 text-sm font-medium transition-colors duration-150 ${
                   index === 0
                     ? "bg-[#0052CC] text-[#FFFFFF]"
-                    : "bg-[#FFFFFF] text-[#002A66] border border-[#E2E8F0] hover:border-[#0052CC]"
+                    : "bg-[#FFFFFF] text-[#000000] border border-[#E2E8F0] hover:border-[#0052CC]"
                 }`}
               >
                 {category}
@@ -97,15 +97,15 @@ export default function BlogPage() {
                 className="border border-[#E2E8F0] hover:border-[#0052CC] transition-colors duration-150 flex flex-col"
               >
                 <div className="h-48 bg-[#F8FAFC] flex items-center justify-center border-b border-[#E2E8F0]">
-                  <span className="text-[#002A66]/20 text-6xl font-bold">{post.category.charAt(0)}</span>
+                  <span className="text-[#000000]/20 text-6xl font-bold">{post.category.charAt(0)}</span>
                 </div>
                 <div className="p-6 flex-1 flex flex-col">
                   <span className="text-[#0052CC] text-sm font-medium">{post.category}</span>
-                  <h3 className="text-xl font-bold text-[#002A66] mt-2 mb-3 leading-tight">{post.title}</h3>
-                  <p className="text-[#002A66]/70 text-sm flex-1">{post.excerpt}</p>
+                  <h3 className="text-xl font-bold text-[#000000] mt-2 mb-3 leading-tight">{post.title}</h3>
+                  <p className="text-[#000000]/70 text-sm flex-1">{post.excerpt}</p>
                   <div className="flex items-center justify-between mt-4 pt-4 border-t border-[#E2E8F0]">
-                    <span className="text-[#002A66]/60 text-sm">{post.date}</span>
-                    <span className="text-[#002A66]/60 text-sm">{post.readTime}</span>
+                    <span className="text-[#000000]/60 text-sm">{post.date}</span>
+                    <span className="text-[#000000]/60 text-sm">{post.readTime}</span>
                   </div>
                 </div>
               </article>
@@ -115,7 +115,7 @@ export default function BlogPage() {
       </section>
 
       {/* Newsletter CTA */}
-      <section className="py-20 bg-[#002A66] text-[#FFFFFF]">
+      <section className="py-20 bg-[#000000] text-[#FFFFFF]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-6">Stay Updated</h2>
           <p className="text-[#FFFFFF]/70 text-lg mb-8 max-w-2xl mx-auto">
@@ -125,7 +125,7 @@ export default function BlogPage() {
             <input
               type="email"
               placeholder="Enter your email"
-              className="flex-1 px-4 py-3 bg-[#FFFFFF] text-[#002A66] border-0 focus:outline-none focus:ring-2 focus:ring-[#0052CC]"
+              className="flex-1 px-4 py-3 bg-[#FFFFFF] text-[#000000] border-0 focus:outline-none focus:ring-2 focus:ring-[#0052CC]"
             />
             <button className="bg-[#0052CC] text-[#FFFFFF] px-6 py-3 font-semibold hover:bg-[#0052CC]/90 transition-colors duration-150">
               Subscribe

@@ -3,6 +3,7 @@
 import { useState } from "react"
 import Link from "next/link"
 import { MenuIcon, XIcon, ChevronDownIcon } from "./icons"
+import Image from "next/image"
 
 const serviceItems = [
   { label: "Web Development", href: "/services/web-development" },
@@ -29,8 +30,8 @@ export function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 flex-shrink-0">
-            <div className="w-10 h-10 bg-[#0052CC] flex items-center justify-center">
-              <span className="text-[#FFFFFF] font-bold text-lg">H</span>
+            <div className="w-10 h-10 flex items-center justify-center">
+              <Image src="/favicon.ico" alt="Humax Digital Logo" width={50} height={50} />
             </div>
             <span className="text-[#002A66] font-bold text-xl tracking-tight">Humax Digital</span>
           </Link>

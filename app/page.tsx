@@ -11,7 +11,7 @@ import { StickyCta } from "@/components/sticky-cta"
 
 export default function HomePage() {
   return (
-    <main>
+    <main className="bg-gradient-to-b from-black via-[#0A0A0A] to-black text-white overflow-x-hidden w-full">
       <Header />
       <HeroSection />
       <ServicesSection />

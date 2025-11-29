@@ -97,7 +97,7 @@ export default function AIAutomationPage() {
       {/* Capabilities */}
       <section className="py-16 bg-[#FFFFFF]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-[#002A66] mb-8">Our AI Capabilities</h2>
+          <h2 className="text-2xl font-bold text-[#000000] mb-8">Our AI Capabilities</h2>
           <div className="grid md:grid-cols-3 gap-6">
             {capabilities.map((cap) => (
               <div key={cap.title} className="border border-[#D1D5DB] p-6">
@@ -105,7 +105,7 @@ export default function AIAutomationPage() {
                 <p className="text-sm text-[#4A5568] mb-4">{cap.description}</p>
                 <ul className="space-y-2">
                   {cap.items.map((item) => (
-                    <li key={item} className="flex items-center gap-2 text-sm text-[#002A66]">
+                    <li key={item} className="flex items-center gap-2 text-sm text-[#000000]">
                       <CheckIcon className="w-4 h-4 text-[#0052CC]" />
                       {item}
                     </li>
@@ -120,11 +120,11 @@ export default function AIAutomationPage() {
       {/* Use Cases Grid */}
       <section className="py-16 bg-[#F5F7FA]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-[#002A66] mb-8">Use Cases</h2>
+          <h2 className="text-2xl font-bold text-[#000000] mb-8">Use Cases</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {useCases.map((useCase) => (
               <div key={useCase.title} className="p-4 bg-[#FFFFFF] border border-[#D1D5DB]">
-                <h3 className="font-bold text-[#002A66] mb-1">{useCase.title}</h3>
+                <h3 className="font-bold text-[#000000] mb-1">{useCase.title}</h3>
                 <p className="text-sm text-[#4A5568]">{useCase.description}</p>
               </div>
             ))}
@@ -135,7 +135,7 @@ export default function AIAutomationPage() {
       {/* Pricing Tiers */}
       <section id="pricing" className="py-16 bg-[#FFFFFF]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-[#002A66] mb-8 text-center">AI Chatbot & Agent Pricing</h2>
+          <h2 className="text-2xl font-bold text-[#000000] mb-8 text-center">AI Chatbot & Agent Pricing</h2>
           <div className="grid md:grid-cols-3 gap-6">
             {chatbotTiers.map((tier) => (
               <div
@@ -147,7 +147,7 @@ export default function AIAutomationPage() {
                     MOST POPULAR
                   </div>
                 )}
-                <h3 className="text-lg font-bold text-[#002A66]">{tier.name}</h3>
+                <h3 className="text-lg font-bold text-[#000000]">{tier.name}</h3>
                 <div className="text-2xl font-bold text-[#0052CC] mt-2">{tier.price}</div>
                 <p className="text-sm text-[#4A5568] mt-2">{tier.description}</p>
                 <ul className="mt-6 space-y-3 flex-grow">
@@ -162,7 +162,7 @@ export default function AIAutomationPage() {
                   href="/#contact"
                   className={`mt-6 px-4 py-3 text-sm font-semibold text-center transition-colors duration-150 ${
                     tier.popular
-                      ? "bg-[#0052CC] text-[#FFFFFF] hover:bg-[#002A66]"
+                      ? "bg-[#0052CC] text-[#FFFFFF] hover:bg-[#000000]"
                       : "border border-[#0052CC] text-[#0052CC] hover:bg-[#0052CC] hover:text-[#FFFFFF]"
                   }`}
                 >
@@ -177,12 +177,12 @@ export default function AIAutomationPage() {
       {/* Timeline */}
       <section className="py-16 bg-[#F5F7FA]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-[#002A66] mb-8">Project Timeline</h2>
+          <h2 className="text-2xl font-bold text-[#000000] mb-8">Project Timeline</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {timeline.map((item, index) => (
               <div key={item.phase} className="relative p-6 bg-[#FFFFFF] border border-[#D1D5DB]">
                 <div className="text-xs text-[#0052CC] font-bold mb-2">PHASE {index + 1}</div>
-                <h3 className="text-lg font-bold text-[#002A66]">{item.phase}</h3>
+                <h3 className="text-lg font-bold text-[#000000]">{item.phase}</h3>
                 <div className="text-sm font-semibold text-[#4A5568] mt-1">{item.duration}</div>
                 <p className="text-sm text-[#4A5568] mt-2">{item.details}</p>
               </div>
@@ -194,10 +194,10 @@ export default function AIAutomationPage() {
       {/* Technical Specs */}
       <section className="py-16 bg-[#FFFFFF]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-[#002A66] mb-8">Technical Specifications</h2>
+          <h2 className="text-2xl font-bold text-[#000000] mb-8">Technical Specifications</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-[#F5F7FA] p-6">
-              <h3 className="font-bold text-[#002A66] mb-4">Models Supported</h3>
+              <h3 className="font-bold text-[#000000] mb-4">Models Supported</h3>
               <ul className="space-y-2 text-sm text-[#4A5568]">
                 <li>OpenAI GPT-4 / GPT-4 Turbo</li>
                 <li>Anthropic Claude 3</li>
@@ -207,7 +207,7 @@ export default function AIAutomationPage() {
               </ul>
             </div>
             <div className="bg-[#F5F7FA] p-6">
-              <h3 className="font-bold text-[#002A66] mb-4">Infrastructure</h3>
+              <h3 className="font-bold text-[#000000] mb-4">Infrastructure</h3>
               <ul className="space-y-2 text-sm text-[#4A5568]">
                 <li>Vector databases (Pinecone, Weaviate)</li>
                 <li>Cloud hosting (AWS, GCP, Azure)</li>
@@ -221,7 +221,7 @@ export default function AIAutomationPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-[#002A66]">
+      <section className="py-16 bg-[#000000]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl sm:text-3xl font-bold text-[#FFFFFF] mb-4">Ready to Automate with AI?</h2>
           <p className="text-[#FFFFFF]/80 mb-8 max-w-xl mx-auto">

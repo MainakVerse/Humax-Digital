@@ -1,8 +1,17 @@
+"use client"
+
 import Link from "next/link"
+import { ChevronDown } from "lucide-react"
 
 export function HeroSection() {
+  const handleScroll = () => {
+    const section = document.querySelector("#services")
+    section?.scrollIntoView({ behavior: "smooth" })
+  }
+
   return (
-    <section className="relative bg-[#0052CC] pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
+    <section id="hero" className="relative bg-[#0052CC] min-h-screen pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
+
       {/* Background Pattern - Subtle grid lines */}
       <div className="absolute inset-0 opacity-5">
         <svg className="w-full h-full" viewBox="0 0 1200 600" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -15,7 +24,7 @@ export function HeroSection() {
         </svg>
       </div>
 
-      <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="text-center">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#FFFFFF] leading-tight text-balance">
             Engineering Digital Growth for High-Performance Businesses
@@ -39,30 +48,18 @@ export function HeroSection() {
               Book a Call
             </Link>
           </div>
-
-          {/* Trust Indicators */}
-          <div className="mt-12 flex flex-wrap items-center gap-8 justify-center">
-            <div className="flex items-center gap-2 text-[#FFFFFF]/80 text-sm">
-              <div className="w-8 h-8 border border-[#FFFFFF]/40 flex items-center justify-center">
-                <span className="text-xs font-bold">ISO</span>
-              </div>
-              <span>ISO Certified</span>
-            </div>
-            <div className="flex items-center gap-2 text-[#FFFFFF]/80 text-sm">
-              <div className="w-8 h-8 border border-[#FFFFFF]/40 flex items-center justify-center">
-                <span className="text-xs font-bold">AWS</span>
-              </div>
-              <span>AWS Partner</span>
-            </div>
-            <div className="flex items-center gap-2 text-[#FFFFFF]/80 text-sm">
-              <div className="w-8 h-8 border border-[#FFFFFF]/40 flex items-center justify-center">
-                <span className="text-xs font-bold">GCP</span>
-              </div>
-              <span>Google Cloud</span>
-            </div>
-          </div>
         </div>
       </div>
+
+      {/* Scroll Down Button */}
+      <button
+        onClick={handleScroll}
+        className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center text-white animate-bounce focus:outline-none"
+        aria-label="Scroll Down"
+      >
+        <ChevronDown size={36} strokeWidth={1.5} />
+      </button>
+
     </section>
   )
 }
