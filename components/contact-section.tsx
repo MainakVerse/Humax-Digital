@@ -75,7 +75,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <div className="font-semibold text-[#002A66]">Phone</div>
-                  <div className="text-[#4A5568]">++91 92463 51178</div>
+                  <div className="text-[#4A5568]">+91 92463 51178</div>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -157,7 +157,7 @@ export function ContactSection() {
                     id="phone"
                     required
                     className="w-full px-4 py-3 bg-[#FFFFFF] border border-[#D1D5DB] text-[#002A66] placeholder-[#9CA3AF] focus:outline-none focus:border-[#0052CC] focus:ring-1 focus:ring-[#0052CC]"
-                    placeholder="++91 92463 51178"
+                    placeholder="+91 92463 51178"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                   />
