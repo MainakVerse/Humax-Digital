@@ -1,7 +1,6 @@
 "use client"
 
 import type React from "react"
-
 import { useState } from "react"
 
 const services = [
@@ -22,10 +21,50 @@ export function ContactSection() {
     consent: false,
   })
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [status, setStatus] = useState<null | "success" | "error">(null)
+  const [errorMsg, setErrorMsg] = useState("")
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission
-    console.log("Form submitted:", formData)
+    setIsSubmitting(true)
+    setStatus(null)
+    setErrorMsg("")
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      })
+
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}))
+        setStatus("error")
+        setErrorMsg(data?.error || "Something went wrong. Please try again.")
+        return
+      }
+
+      setStatus("success")
+      // Reset form
+      setFormData({
+        fullName: "",
+        companyName: "",
+        workEmail: "",
+        phone: "",
+        service: "",
+        message: "",
+        consent: false,
+      })
+    } catch (err) {
+      console.error(err)
+      setStatus("error")
+      setErrorMsg("Network error. Please try again.")
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -213,11 +252,23 @@ export function ContactSection() {
                 </label>
               </div>
 
+              {status === "success" && (
+                <p className="text-sm text-green-600">
+                  Thank you! Your inquiry has been submitted.
+                </p>
+              )}
+              {status === "error" && (
+                <p className="text-sm text-red-600">
+                  {errorMsg}
+                </p>
+              )}
+
               <button
                 type="submit"
-                className="w-full px-8 py-4 bg-[#0052CC] text-[#FFFFFF] font-bold hover:bg-[#002A66] transition-colors duration-150"
+                disabled={isSubmitting}
+                className="w-full px-8 py-4 bg-[#0052CC] text-[#FFFFFF] font-bold hover:bg-[#002A66] transition-colors duration-150 disabled:opacity-60 disabled:cursor-not-allowed"
               >
-                Submit Inquiry
+                {isSubmitting ? "Submitting..." : "Submit Inquiry"}
               </button>
             </form>
           </div>
